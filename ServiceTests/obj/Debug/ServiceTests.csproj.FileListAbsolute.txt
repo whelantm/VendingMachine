@@ -1,0 +1,15 @@
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\obj\Debug\ServiceTests.csprojResolveAssemblyReference.cache
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\bin\Debug\ServiceTests.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\bin\Debug\ServiceTests.pdb
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\bin\Debug\Castle.Core.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\bin\Debug\Model.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\bin\Debug\Moq.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\bin\Debug\nunit.framework.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\bin\Debug\Service.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\bin\Debug\Service.pdb
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\bin\Debug\Model.pdb
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\bin\Debug\Castle.Core.xml
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\bin\Debug\Moq.xml
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\bin\Debug\nunit.framework.xml
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\obj\Debug\ServiceTests.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\ServiceTests\obj\Debug\ServiceTests.pdb

@@ -1,0 +1,10 @@
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\VendingMachine\bin\Debug\VendingMachine.exe.config
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\VendingMachine\bin\Debug\VendingMachine.exe
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\VendingMachine\bin\Debug\VendingMachine.pdb
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\VendingMachine\obj\Debug\VendingMachine.csprojResolveAssemblyReference.cache
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\VendingMachine\obj\Debug\VendingMachine.exe
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\VendingMachine\obj\Debug\VendingMachine.pdb
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\VendingMachine\bin\Debug\Model.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\VendingMachine\bin\Debug\Service.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\VendingMachine\bin\Debug\Service.pdb
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\VendingMachine\bin\Debug\Model.pdb

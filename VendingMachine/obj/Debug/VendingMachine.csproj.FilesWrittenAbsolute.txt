@@ -1,0 +1,10 @@
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/VendingMachine/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/VendingMachine/bin/Debug/VendingMachine.exe.config
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/VendingMachine/bin/Debug/VendingMachine.exe.mdb
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/VendingMachine/bin/Debug/VendingMachine.exe
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/VendingMachine/obj/Debug/VendingMachine.exe
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/VendingMachine/obj/Debug/VendingMachine.exe.mdb
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/VendingMachine/bin/Debug/Service.dll
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/VendingMachine/bin/Debug/Service.dll.mdb
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/VendingMachine/bin/Debug/Model.dll
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/VendingMachine/bin/Debug/Model.dll.mdb

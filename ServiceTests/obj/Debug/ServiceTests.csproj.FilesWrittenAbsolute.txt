@@ -1,0 +1,12 @@
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/ServiceTests/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/ServiceTests/bin/Debug/ServiceTests.dll.mdb
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/ServiceTests/bin/Debug/ServiceTests.dll
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/ServiceTests/obj/Debug/ServiceTests.dll
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/ServiceTests/obj/Debug/ServiceTests.dll.mdb
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/ServiceTests/bin/Debug/Castle.Core.dll
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/ServiceTests/bin/Debug/Moq.dll
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/ServiceTests/bin/Debug/nunit.framework.dll
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/ServiceTests/bin/Debug/Service.dll
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/ServiceTests/bin/Debug/Service.dll.mdb
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/ServiceTests/bin/Debug/Model.dll
+/Users/travis/Dropbox/OptiRTC/OptiUI-VendingMachine/VendingMachine/ServiceTests/bin/Debug/Model.dll.mdb

@@ -1,0 +1,7 @@
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\CoffeeService\bin\Debug\Service.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\CoffeeService\bin\Debug\Service.pdb
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\CoffeeService\bin\Debug\Model.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\CoffeeService\bin\Debug\Model.pdb
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\CoffeeService\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\CoffeeService\obj\Debug\Service.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\CoffeeService\obj\Debug\Service.pdb

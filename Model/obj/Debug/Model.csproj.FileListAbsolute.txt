@@ -1,0 +1,5 @@
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\Model\bin\Debug\Model.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\Model\bin\Debug\Model.pdb
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\Model\obj\Debug\Model.dll
+C:\Users\remote\Documents\GitHub\OptiUI-VendingMachine\VendingMachine\Model\obj\Debug\Model.pdb
