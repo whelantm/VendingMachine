@@ -2,34 +2,35 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Web.Mvc;
 using VendingMachineUI;
 using VendingMachineUI.Controllers;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
+
 
 namespace VendingMachineUI.Tests
 {
 	[TestFixture]
 	public class HomeControllerTest
 	{
-		[Test]
-		public void Index()
-		{
-			// Arrange
-			var controller = new HomeController();
+	    private IWebDriver ffDriver;
 
-			// Act
-			var result = (ViewResult)controller.Index();
+	    [SetUp]
+	    public void SetUp()
+	    {
+	        ffDriver = new FirefoxDriver();
 
-			var mvcName = typeof(Controller).Assembly.GetName();
-			var isMono = Type.GetType("Mono.Runtime") != null;
+	    }
 
-			var expectedVersion = mvcName.Version.Major + "." + mvcName.Version.Minor;
-			var expectedRuntime = isMono ? "Mono" : ".NET";
-
-			// Assert
-			Assert.AreEqual(expectedVersion, result.ViewData["Version"]);
-			Assert.AreEqual(expectedRuntime, result.ViewData["Runtime"]);
-		}
+	    [Test]
+	    public void Test1()
+	    {
+	        ffDriver.Navigate().GoToUrl("http://localhost/RhinoCoffee/");
+            ffDriver.FindElement(By.Id("coffeeButton")).Click();
+            Assert.That(ffDriver.FindElement(By.Id("coffeePrice")).Text, Is.EqualTo("coffee - $ 2.25"));
+	    }
 	}
 }

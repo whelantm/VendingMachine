@@ -1,39 +1,72 @@
 ﻿<div style="width: 100%" ng-app="coffeeApp" ng-controller="vendingController as ctrl">
 	<div style="text-align: center; font-size: 18px; padding: 8px;">Welcome to RhinoCoffee (patent pending)</div>
 	<div style="width: 33%; display: inline-block; text-align: center;">
-		<img src="~/Content/coffee.svg" style="width: 200px; cursor: pointer;" ng-click="ctrl.addCoffee()" />
+		<img id="coffeeButton" src="~/Content/coffee.svg" style="width: 200px; cursor: pointer;" ng-click="ctrl.addCoffee()" />
 	</div>
 	<div style="width: 33%; display: inline-block; text-align: center;">
-		<img src="~/Content/sugar.svg" style="width: 200px; cursor: pointer;" ng-click="ctrl.addSugar()" />
+		<img id="sugarButton" src="~/Content/sugar.svg" style="width: 200px; cursor: pointer;" ng-click="ctrl.addSugar()" />
 	</div>
 	<div style="width: 33%; display: inline-block; text-align: center;">
-		<img src="~/Content/cream.svg" style="width: 200px; cursor: pointer;" ng-click="ctrl.addCream()" />
+		<img id="creamButton" src="~/Content/cream.svg" style="width: 200px; cursor: pointer;" ng-click="ctrl.addCream()" />
 	</div>
 	<div style="padding: 8px;">
 		<div style="display: inline-block">
 			Current Order: 
-			<span ng-show="ctrl.model.currentOrder.coffee.Quantity > 0">coffee - $ {{ctrl.model.currentOrder.coffee.Price}}</span>
+			<span id="coffeePrice" ng-show="ctrl.model.currentOrder.coffee.Quantity > 0">coffee - $ {{ctrl.model.currentOrder.coffee.Price}}</span>
 			<span ng-show="ctrl.model.currentOrder.cream.Quantity > 0"> + {{ctrl.model.currentOrder.cream.Quantity}} cream - $ {{ctrl.model.currentOrder.cream.Price}}</span>
 			<span ng-show="ctrl.model.currentOrder.sugar.Quantity > 0"> + {{ctrl.model.currentOrder.sugar.Quantity}} sugar - $ {{ctrl.model.currentOrder.sugar.Price}}</span>
 			<span><strong>Order Total: $ {{ctrl.model.currentOrder.coffee.Price + ctrl.model.currentOrder.cream.Price + ctrl.model.currentOrder.sugar.Price}}</strong></span>
 		</div>
 	</div>
 	<div style="padding: 8px;">
-		<div style="display: inline-block; background-color: #00bc19; border: 1px solid white; padding: 4px; color: white; cursor: pointer;" ng-click="ctrl.addToOrder()">
+		<div id="addToOrder" style="display: inline-block; background-color: #00bc19; border: 1px solid white; padding: 4px; color: white; cursor: pointer;" ng-click="ctrl.addToOrder()">
 			ADD TO ORDER
 		</div>
-		<div style="display: inline-block; background-color: #c6c4c4; border: 1px solid white; padding: 4px; color: white; cursor: pointer;" ng-click="ctrl.clearCurrentOrder()">
+		<div id="nevermind" style="display: inline-block; background-color: #c6c4c4; border: 1px solid white; padding: 4px; color: white; cursor: pointer;" ng-click="ctrl.clearCurrentOrder()">
 			NEVERMIND
 		</div>
 	</div>
-	<div style="padding: 8px;">
-		<div>Your Order:</div>
-		<div style="padding: 4px;" ng-repeat="order in ctrl.model.orders track by order.id">
-			<span>Coffee</span><span ng-show="order.cream.Quantity > 0">, {{order.cream.Quantity}} cream</span><span ng-show="order.sugar.Quantity > 0">, {{order.sugar.Quantity}} sugar</span>
-			<span><strong>Order Total: $ {{order.coffee.Price + order.cream.Price + order.sugar.Price}}</strong></span>
-		</div>
-		<div>
-			<strong>Please Pay: $ {{ctrl.orderTotal()}}</strong>
-		</div>
-	</div>
+    <div style="padding: 8px;">
+        <div>Your Order:</div>
+        <div style="padding: 4px;" ng-repeat="order in ctrl.model.orders track by order.id">
+            <span>Coffee</span><span ng-show="order.cream.Quantity > 0">, {{order.cream.Quantity}} cream</span><span ng-show="order.sugar.Quantity > 0">, {{order.sugar.Quantity}} sugar</span>
+            <span><strong>Order Total: $ {{order.coffee.Price + order.cream.Price + order.sugar.Price}}</strong></span>
+        </div>
+        <div>
+            <strong>Please Pay: $ {{ctrl.orderTotal()}}</strong>
+        </div>
+    </div>
+    <div style="padding: 8px;">
+        <div id="completeOrder" style="display: inline-block; background-color: #00bc19; border: 1px solid white; padding: 4px; color: white; cursor: pointer;" ng-click="ctrl.completeOrder()">FINISH AND PAY</div>
+        <div id="cancelOrder" style="display: inline-block; background-color: #c6c4c4; border: 1px solid white; padding: 4px; color: white; cursor: pointer;" ng-click="ctrl.cancelOrder()">CANCEL ORDER</div>
+    </div>
+    <div id="paymentContainer" ng-show="ctrl.isPaying" style="padding: 8px;">
+        <div>
+            <div style="width: 20%; display: inline-block; text-align: center;">
+                <div id="twentyButton" style="width: 150px; height: 50px; background-color: #3d8e00; border: 1px solid white; padding: 4px; color: white; cursor: pointer; vertical-align: middle;" ng-click="ctrl.addTwenty()">Twenty $20 Twenty</div>
+            </div>
+            <div style="width: 20%; display: inline-block; text-align: center;">
+                <div id="tenButton" style="width: 150px; height: 50px; background-color: #3d8e00; border: 1px solid white; padding: 4px; color: white; cursor: pointer; vertical-align: middle;" ng-click="ctrl.addTen();">Ten $10 Ten</div>
+            </div>
+            <div style="width: 20%; display: inline-block; text-align: center;">
+                <div id="fiveButton" style="width: 150px; height: 50px; background-color: #3d8e00; border: 1px solid white; padding: 4px; color: white; cursor: pointer; vertical-align: middle" ng-click="ctrl.addFive()">Five $5 Five</div>
+            </div>
+            <div style="width: 20%; display: inline-block; text-align: center;">
+                <div id="oneButton" style="width: 150px; height: 50px; background-color: #3d8e00; border: 1px solid white; padding: 4px; color: white; cursor: pointer; vertical-align: middle" ng-click="ctrl.addOne()">One $1 One</div>
+            </div>
+        </div>
+
+        <div style="padding-top: 20px; padding-bottom: 8px;">
+            <div style="width: 33%; display: inline-block;">
+                <div id="quarterButton" style="width: 100px; height: 100px; border-radius: 50%; background-color: silver; color: black; cursor: pointer; vertical-align: middle; text-align: center; line-height: 100px;" ng-click="ctrl.addQuarter()">25 c</div>
+            </div>
+            <div style="width: 33%; display: inline-block;">
+                <div id="dimeButton" style="width: 40px; height: 40px; border-radius: 50%; background-color: silver; color: black; cursor: pointer; vertical-align: middle; text-align: center; line-height: 40px;" ng-click="ctrl.addDime()">10 c</div>
+            </div>
+            <div style="width: 33%; display: inline-block;">
+                <div id="nickelButton" style="width: 75px; height: 75px; border-radius: 50%; background-color: silver; color: black; cursor: pointer; vertical-align: middle; text-align: center; line-height:75px;" ng-click="ctrl.addNickel()">5 c</div>
+            </div>
+        </div>
+        <div>${{ctrl.paymentTotal()}}</div>
+    </div>
 </div>

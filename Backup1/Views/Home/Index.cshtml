@@ -1,0 +1,39 @@
+﻿<div style="width: 100%" ng-app="coffeeApp" ng-controller="vendingController as ctrl">
+	<div style="text-align: center; font-size: 18px; padding: 8px;">Welcome to RhinoCoffee (patent pending)</div>
+	<div style="width: 33%; display: inline-block; text-align: center;">
+		<img src="~/Content/coffee.svg" style="width: 200px; cursor: pointer;" ng-click="ctrl.addCoffee()" />
+	</div>
+	<div style="width: 33%; display: inline-block; text-align: center;">
+		<img src="~/Content/sugar.svg" style="width: 200px; cursor: pointer;" ng-click="ctrl.addSugar()" />
+	</div>
+	<div style="width: 33%; display: inline-block; text-align: center;">
+		<img src="~/Content/cream.svg" style="width: 200px; cursor: pointer;" ng-click="ctrl.addCream()" />
+	</div>
+	<div style="padding: 8px;">
+		<div style="display: inline-block">
+			Current Order: 
+			<span ng-show="ctrl.model.currentOrder.coffee.Quantity > 0">coffee - $ {{ctrl.model.currentOrder.coffee.Price}}</span>
+			<span ng-show="ctrl.model.currentOrder.cream.Quantity > 0"> + {{ctrl.model.currentOrder.cream.Quantity}} cream - $ {{ctrl.model.currentOrder.cream.Price}}</span>
+			<span ng-show="ctrl.model.currentOrder.sugar.Quantity > 0"> + {{ctrl.model.currentOrder.sugar.Quantity}} sugar - $ {{ctrl.model.currentOrder.sugar.Price}}</span>
+			<span><strong>Order Total: $ {{ctrl.model.currentOrder.coffee.Price + ctrl.model.currentOrder.cream.Price + ctrl.model.currentOrder.sugar.Price}}</strong></span>
+		</div>
+	</div>
+	<div style="padding: 8px;">
+		<div style="display: inline-block; background-color: #00bc19; border: 1px solid white; padding: 4px; color: white; cursor: pointer;" ng-click="ctrl.addToOrder()">
+			ADD TO ORDER
+		</div>
+		<div style="display: inline-block; background-color: #c6c4c4; border: 1px solid white; padding: 4px; color: white; cursor: pointer;" ng-click="ctrl.clearCurrentOrder()">
+			NEVERMIND
+		</div>
+	</div>
+	<div style="padding: 8px;">
+		<div>Your Order:</div>
+		<div style="padding: 4px;" ng-repeat="order in ctrl.model.orders track by order.id">
+			<span>Coffee</span><span ng-show="order.cream.Quantity > 0">, {{order.cream.Quantity}} cream</span><span ng-show="order.sugar.Quantity > 0">, {{order.sugar.Quantity}} sugar</span>
+			<span><strong>Order Total: $ {{order.coffee.Price + order.cream.Price + order.sugar.Price}}</strong></span>
+		</div>
+		<div>
+			<strong>Please Pay: $ {{ctrl.orderTotal()}}</strong>
+		</div>
+	</div>
+</div>
